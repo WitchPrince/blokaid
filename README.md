@@ -1,9 +1,17 @@
-Gereklilikler:
+GEREKLİLİKLER:
+
 solana cli ^2.3.8
+
 anchor cli ^0.31.0
+
 npm ^11.5.1
+
 rustc 1.89.0
 
+=========================================================================================
+
+
+KULLANIM KILAVUZU:
 Öncelikle projeyi oluşturduktan sonra projenin ana dizinine girip terminalde "chmod +x gereklilikler.sh run.sh" komutlarını çalıştırıyoruz. 
 
 Sonrasında "./gereklilikler.sh komutunu kullanarak hem proje için olan gereklilikleri hem de Program ID'mizi elde ediyoruz. 
