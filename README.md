@@ -1,1 +1,9 @@
-Öncelikle projeyi oluşturduktan sonra projenin ana dizinine girip terminalde "chmod +x gereklilikler.sh run.sh" komutlarını çalıştırıyoruz. Sonrasında "./gereklilikler.sh komutunu kullanarak hem proje için olan gereklilikleri hem de Program ID'mizi elde ediyoruz. Ardından bu program ID'yi lib.rs dosyası içerisindeki "declare_id!("")" içerisine yazıyoruz. lib.rs dosyasını kaydedip çıktıktan sonra yine projenin ana dizininde "./run.sh" komutunu çalıştırıyoruz. SOL göndermek istediğimiz cüzdanı listeden numarasını seçip ardından göndermek istediğimiz SOL miktarını yazıyoruz. 
+Öncelikle projeyi oluşturduktan sonra projenin ana dizinine girip terminalde "chmod +x gereklilikler.sh run.sh" komutlarını çalıştırıyoruz. 
+
+Sonrasında "./gereklilikler.sh komutunu kullanarak hem proje için olan gereklilikleri hem de Program ID'mizi elde ediyoruz. 
+
+Ardından bu program ID'yi lib.rs dosyası içerisindeki "declare_id!("")" içerisine yazıyoruz. 
+
+lib.rs dosyasını kaydedip çıktıktan sonra yine projenin ana dizininde "./run.sh" komutunu çalıştırıyoruz. 
+
+SOL göndermek istediğimiz cüzdanı listeden numarasını seçip ardından göndermek istediğimiz SOL miktarını yazıyoruz. 
