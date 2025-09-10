@@ -1,11 +1,1 @@
-Öncelikle projedenin çalıştırılması için "npm install" komutunu çalıştırıyoruz.
-
-Açıklar olduğu yönünde uyarı alırsak "npm audit fix --force" komutunu çalıştırmamız gerek.
-
-Ardından şuanki cüzdanımızı devnet üzerinde test edebilmek için "solana-keygen recover "prompt://?key=0/0" -o recovered.json", "solana balance --keypair recovered.json" komutlarını sırasıyla çalıştırdıktan sonra cüzdanımızın
-key-phrase'lerini giriyoruz. Karşımıza cüzdanımızın devnet versiyonunun pubkey'i çıkacak. Bu pubkeye "solana airdrop 5 <devnet-cüzdan-pubkeyi>" komutu ile 5 SOL yükledikten sonra devnet cüzdanımız hazır.
-
-Son olarak sırasıyla "anchor build", "anchor deploy --provider.cluster github" (deploy aşaması bazen bağlantı sorunları yüzünden hata alabilir, başarılı olana kadar çalıştırmamız lazım.), "ts-node tests/blokaid.ts" komutlarını
-çalıştırıyoruz. (Bu aşamada makinemizde solana, anchor ve ts-node modüllerinin yüklü olması lazım.)
-
-Karşımıza gelen seçim ekranında hangi hesaba SOL göndermek istediğimizi numarası ile belli ettikten sonra kaç SOL göndermek istediğimizi seçiyoruz ve işlem gerçekleşiyor.
+Öncelikle projeyi oluşturduktan sonra projenin ana dizinine girip terminalde "chmod +x gereklilikler.sh run.sh" komutlarını çalıştırıyoruz. Sonrasında "./gereklilikler.sh komutunu kullanarak hem proje için olan gereklilikleri hem de Program ID'mizi elde ediyoruz. Ardından bu program ID'yi lib.rs dosyası içerisindeki "declare_id!("")" içerisine yazıyoruz. lib.rs dosyasını kaydedip çıktıktan sonra yine projenin ana dizininde "./run.sh" komutunu çalıştırıyoruz. SOL göndermek istediğimiz cüzdanı listeden numarasını seçip ardından göndermek istediğimiz SOL miktarını yazıyoruz. 
