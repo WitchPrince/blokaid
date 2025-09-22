@@ -11,18 +11,16 @@ echo "📌 Cüzdanınızın Devnet Pubkey'i: $PUBKEY"
 # Bakiyeyi göster
 solana balance --keypair recovered.json --url https://api.devnet.solana.com
 
-# Airdrop gönder
+# Devnet üzerinden airdrop al
 echo "💧 5 SOL airdrop isteniyor..."
 solana airdrop 5 $PUBKEY --url https://api.devnet.solana.com
 
-# Anchor build
+# Anchor build & deploy
 anchor build
-
-#Anchor Deploy
 anchor deploy --provider.cluster devnet
 
 #Test öncesi bakiye bildirimi
 solana balance $PUBKEY
 
-#Proje test
+#Testi başlat
 ts-node tests/blokaid.ts
