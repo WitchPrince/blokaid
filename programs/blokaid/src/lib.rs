@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 use anchor_lang::system_program;
 
-declare_id!("5Q5am6R9PesBc6WVuddL6bDy4c5vvUBs7TXPEgaJd5Dh");
+declare_id!("Write_Your_Program_ID_Here");
 
 #[program]
 pub mod blokaid {
@@ -18,13 +18,13 @@ pub mod blokaid {
             &"9kvokqvpzg7fGuyYcydC4YggPa8Gx38x18FZC2196bgZ".parse().unwrap(),
         ];
 
-        // Recipient listenin içinde mi kontrol et
+        // Seçilen recipient'in listenin içinde olup olmadığı kontrolü
         require!(
             allowed_recipients.contains(&&recipient_key),
             CustomError::InvalidRecipient
         );
 
-        // SOL transferi - Devnet uyumlu
+        // SOL transferi
         let cpi_ctx = CpiContext::new(
             ctx.accounts.system_program.to_account_info(),
             system_program::Transfer {
@@ -45,7 +45,7 @@ pub struct SendDonation<'info> {
     pub donor: Signer<'info>,
 
     #[account(mut)]
-    /// CHECK: recipient kontrol burada yapılıyor
+    
     pub recipient: AccountInfo<'info>,
 
     pub system_program: Program<'info, System>,
