@@ -18,6 +18,8 @@ Sonrasında "./gereklilikler.sh komutunu kullanarak hem proje için olan gerekli
 
 Ardından bu program ID'yi ..blokaid/programs/src/lib.rs dosyası içerisindeki "declare_id!("")" içerisine yazıyoruz. 
 
+!Yukarıdaki aşamalar tek seferliktir ve projenin çalıştırılabilmesi için proje klonlandıktan sonra bir kereliğine yapılması yeterlidir.!
+
 lib.rs dosyasını kaydedip çıktıktan sonra projenin kök dizine dönüp "./run.sh" komutunu çalıştırıyoruz. 
 
 Cüzdan adresimize airdrop yapmak için bizden bir key-phrase isteyecek. Cüzdanımızın key-phrase'ini yazalım ve 5 SOL airdrop alalım.
