@@ -1,0 +1,8 @@
+{
+  "recipients": [
+    { "id": 1, "name": "Jack", "pubkey": "Bo8ytZCu1wDMvCkcFjtoYMZ1L4yzwsVS5yjxhmD6aRin" },
+    { "id": 2, "name": "Fake Address", "pubkey": "7gTx7Xx9cRjYUMk5zvRZfCj3vJeG2ZsvQKXaXr4mhJ2u" },
+    { "id": 3, "name": "John", "pubkey": "4bmXeL3Y9DVHLm42kXAE9UpRpbM72wHxQE1dpUFzA2FZ" },
+    { "id": 4, "name": "Doe", "pubkey": "9kvokqvpzg7fGuyYcydC4YggPa8Gx38x18FZC2196bgZ"}
+  ]
+}
